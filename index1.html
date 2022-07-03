@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <script src="https://kit.fontawesome.com/a9a37f8c02.js" crossorigin="anonymous"></script>
+    <title>Suvyaktha Sabha</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- * ADD: contact No, Map, Whatsapp Chat -->
+    <div class="chatbot">
+        <!-- <img src="./assets/img/chatbot.png" alt=""> -->
+        <nav>
+            <label class="nav-logo-off">
+                <!-- <svg viewBox="0 0 100 100"> -->
+                <img src="./assets/img/chatbot.png" alt="">
+                </svg>
+            </label>
+            <ul>
+                <li class="nav-item" onclick="window.open('https://goo.gl/maps/UdjJQRArQ8EwFgVG6', '_blank');"><img
+                        src="./assets/img/chatbot/location-pin.png"></li>
+                <li class="nav-item" onclick="window.open('https://web.whatsapp.com/', '_blank');"><img
+                        src="./assets/img/chatbot/whatsapp.png"></li>
+                <li class="nav-item" onclick="window.open('tel:+1800229933')"><img
+                        src="./assets/img/chatbot/phone-call.png"></li>
+                <li class="nav-item"><img
+                        src="./assets/img/chatbot/chat.png"></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="hero">
+        <video autoplay="autoplay" loop="true" id="heroVideo" muted>
+            <source src="./assets/SSProject.mp4" type="video/mp4">
+        </video>
+
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html"><img src="assets/img/Suvyaktha Logo-01-01-01.jpg" class="logo" /></a>
+                    <!-- <div>English ▼</div> -->
+                    <!-- <div>English ▼
+                        <ul>
+                            <li>Telugu</li>
+                            <li>Tamil</li>
+                            <li>Malayalam</li>
+                            <li>Hindi</li>
+                        </ul>
+                    </div> -->
+                    <div id="google_translate_element"></div>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li>Home</li>
+                        <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                        <li class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="./servicesAparakarma.html">Aparakarma</a>
+                                <a href="./servicesShradha.html">Shradha</a>
+                            </div>
+                        </li>
+                        <li onclick="window.location.href = './gallery.html'">Gallery</li>
+                        <li onclick="window.location.href='./Events.html'">Events</li>
+                        <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                    </ul>
+                    <button onclick="window.location.href='./signin.html'">Sign in</button>
+                </div>
+            </nav>
+
+            <nav class="nav-mobile">
+                <div class="navbar">
+                    <!-- <div class="navbar__logo">LOGO</div> -->
+                    <img src="./assets/img/Suvyaktha Logo-01-01-01.jpg" class="navbar__logo"
+                        onclick="window.location.href='./index.html'">
+                    <div class="nav-container">
+                        <input class="checkbox" type="checkbox" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <div class="menu-items">
+                            <li onclick="window.location.href='./index.html'">Home</a></li>
+                            <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                            <li class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="./servicesAparakarma.html">Aparakarma</a>
+                                    <a href="./servicesShradha.html">Shradha</a>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href = './gallery.html'">Gallery</a></li>
+                            <li onclick="window.location.href='./Events.html'">Events</li>
+                            <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                            <button onclick="window.location.href='./signin.html'" class="btn">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-box">
+            <h1>Suvyaktha Sabha</h1>
+            <p>
+                <span>Vyaktha</span> means Expressive,<span>Avyaktha</span> means Pointing<br>
+                <span.<span>Suvyaktha</span>
+                    means to reveal unfamiliar concepts
+            </p>
+
+            <button onclick="window.location.href='./contactUs.html'">Enquire Now</button>
+            <img src="./assets/img/home/sound.png" alt="" class="btn-mute">
+        </div>
+
+
+
+    </main>
+
+    <div class="about-bar" id="about">
+        <div>
+            <div>
+                <div class="about-bar-circles">
+                    <img src="./assets/img/hygienic.png" alt="hygienic">
+                </div>
+                <p>Sanitation and Hygienic</p>
+            </div>
+
+            <div>
+                <div class="about-bar-circles">
+                    <img src="./assets/img/rituals.png" alt="rituals">
+                </div>
+                <p>Systematic Rituals</p>
+            </div>
+            <div>
+                <div class="about-bar-circles">
+                    <img src="./assets/img/pandits.png" alt="pandits">
+                </div>
+                <p>Professional Pandits</p>
+            </div>
+            <div>
+                <div class="about-bar-circles">
+                    <img src="./assets/img/facilities.png" alt="facilities">
+                </div>
+                <p>Lift Facility</p>
+            </div>
+            <div>
+                <div class="about-bar-circles">
+                    <img src="./assets/img/water.png" alt="water">
+                </div>
+                <p>24 Hours Hot Water</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="about">
+        <h1>About us</h1>
+        <p>Aparakarma Sri SuvyakthaSabha began two years ago with our father and mother's blessings.
+            We started with Srirangapatna's Vedabhramashree, Astrologer Vidwan Dr. Bhanuprakash Sharma, who began his
+            immortal hand and is now a favourite among all people, with classic Aparakarma and Sradha karma conducted by
+            the respective thrimathastha (Brahmins) pandits.<br>
+            I hope that by working together, everyone may make excellent use of it.</p>
+        <div class="about-pic-box">
+            <div class="about-pic about-pic-first"><img src="./assets/img/home/AboutPic.png" alt=""></div>
+        </div>
+    </section>
+    <img src="./assets/img/spots.png" alt="spot" class="about-spot">
+    <img src="./assets/img/spots.png" alt="spot" class="testimonial-spot">
+
+
+    <section class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services-pics">
+            <a class="services-pic1" href='./servicesAparakarma.html'>
+                <img src="./assets/img/servicesPic1.png" alt="s1">
+
+                <div class="services-pic-info">
+                    <h2>Aparakarma</h2>
+                    <p>Departed soul gets peace and go to Pitru lok happily and bless the family member</p>
+
+                    <button class="book-now link-nested" data-nested-link="./FormAparakarma.html">Book Now</button>
+                </div>
+            </a>
+
+            <a class="services-pic2" href="./servicesShradha.html">
+                <img src="./assets/img/servicesPic2.png" alt="s1">
+
+                <div class="services-pic-info">
+                    <h2>Shradha</h2>
+                    <p>It’s is a significant ritual that takes place on a day of remembrance.</p>
+
+                    <button class="book-now link-nested" data-nested-link="./FormShradha.html">Book Now</button>
+                </div>
+            </a>
+        </div>
+    </section>
+    <img src="./assets/img/spot2.png" alt="spot" class="services-spot">
+
+    <section class="gallery">
+        <h1>Our Gallery</h1>
+        <div class="carousel">
+            <div class="carousel__cards">
+                <div class="carousel__card  main_card">
+                    <img class="carousel__img" src="./assets/img/gallery/1.webp" alt="#">
+                </div>
+                <div class="carousel__card right_card">
+                    <img class="carousel__img" src="./assets/img/gallery/23.webp" alt="#">
+                </div>
+                <div class="carousel__card left_card">
+                    <img class="carousel__img" src="./assets/img/gallery/7.webp" alt="#">
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__control">
+            <button class="carousel__btn carousel__btn--back"><i class="fas fa-angle-left"></i></button>
+            <button class="carousel__btn carousel__btn--next"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </section>
+
+    <a href="./gallery.html" class="btn-explore">EXPLORE MORE</a>
+
+
+
+    <section class="testimonials">
+        <h1>What Our Customers are Saying
+
+            <div class="quote">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#F2E9E4">
+                    <path
+                        d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
+                </svg>
+
+            </div>
+        </h1>
+
+        <div class="testimonials-box">
+            <div class="people">
+                <div class="person  person-main" id="p1">
+                    <p>We performed our fathers annual rites for three days . Nice place with lift facilty available.
+                        Rituals are done in a systematic way. Nice food. Staff are very nice and courteous. We are very
+                        much thankful to guruji for giving us an opportunity to perform the rites at their place.</p>
+                    <p>Umesh MR</p>
+                    <p>Local Guide</p>
+                    <img src="./assets/img/person1.png " alt="#">
+                </div>
+                <div class="person person-2" id="p2">
+                    <p>We had booked for 3 days for first anniversary rituals.
+                        Really great service, highly professional, hygienic, dedicated staff,disciplined. Nice and tasty
+                        food.
+                        Especially Poornima madam is very accommodative.calm, composed and service minded. Overall
+                        excellent experience.</p>
+                    <p>Madhu HN</p>
+                    <img src="./assets/img/person2.png" alt="#">
+                </div>
+                <div class="person person-3" id="p3">
+                    <p>I attended my Aunt's 10th day rituals on 21st January 2022. Well organized. Very well maintained.
+                        Good hygiene maintained. Food was very tasty.</p>
+                    <p>Kolar Srinivasa Sridhar</p>
+                    <img src="./assets/img/person3.png" alt="#">
+                </div>
+                <div class="person person-4" id="p4">
+                    <p>Very neat and hygenic place to perform last rituals of the deceased people.
+                        Staff are very polite and food also very good. No compromise on food and also the method of
+                        performing the rituals.
+                        Hot water 24 hours. Well qualified priests.I recommend people to visit this Suvayakta Sabha and
+                        do the ceremonies n other rituals.</p>
+                    <p>Girish SSS</p>
+                    <img src="./assets/img/person4.png" alt="#">
+                </div>
+                <div class="person person-1" id="p5">
+                    <p>Well planned and maintained sabha for all obsequies and annual ceremonies.
+                        Food served is good with taste. Served as per individual intake capacity with due care.</p>
+                    <p>S.G. VISWANATH</p>
+                    <img src="./assets/img/person5.png" alt="#">
+                </div>
+            </div>
+            <div class="testimonials-bar">
+                <div class="testimonials-circle testimonials-circle-selected"></div>
+                <div class="testimonials-circle"></div>
+                <div class="testimonials-circle"></div>
+                <div class="testimonials-circle"></div>
+                <div class="testimonials-circle"></div>
+            </div>
+            <div class="testimony-box">
+                <p class="testimony"></p>
+                <p class="testimony-name"></p>
+                <p class="testimony-info"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <img class="footer-design" src="./assets/img/home/FooterDesign1.png" alt="Footer Design">
+        <div class="footer-box">
+
+            <div class="footer-div-1">
+                <a href="./index.html"><img src="assets/img/Suvyaktha Logo-01-01-01.jpg" class="logo" /></a>
+                <div class="email">
+                    <i class="far fa-envelope"></i>
+                    <p>info@srisuvyakthasabha.com</p>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9481290352
+                    </p>
+                </div>
+            </div>
+            <div class="footer-div-2">
+                <h3 onclick="window.location.href='./index.html'">Home</h3>
+                <ul>
+                    <li onclick="window.location.href='./gallery.html'">Gallery</li>
+                    <li onclick="window.location.href='./Events.html'">Events</li>
+                    <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-div-2">
+                <h3>Our Services</h3>
+                <ul>
+                    <li onclick="window.location.href='./servicesAparakarma.html'">Aparakarma</li>
+                    <li onclick="window.location.href='./servicesShradha.html'">Shradha</li>
+                </ul>
+
+                <!-- <button onclick="window.location.href='./ServicesAparakarma.html'">Book Now</button> -->
+                <div class="social-icons">
+                    <a><img src="./assets/img/social-icons/google.png"></a>
+                    <a><img src="./assets/img/social-icons/twitter.png"></a>
+                    <a><img src="./assets/img/social-icons/instagram.png"></a>
+                    <a><img src="./assets/img/social-icons/linkedin.png"></a>
+                </div>
+            </div>
+
+
+            <div class="footer-div-2">
+                <h3>Our Address</h3>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>#20, 1, HMT Main Rd, 2nd Phase, Gokula 1st Stage, Divanarapalya, Yeswanthpur, Bengaluru,
+                        Karnataka 560054</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower-box">
+            <div class="copyrights">© 2022 Sri Suvyakthasabha. All rights reserved | Powered by Agumentik Software
+                Private Limited.</div>
+            <ul>
+                <li>Home</li>
+                <li onclick="window.location.href='./Terms.html'">Terms</li>
+                <li onclick="window.location.href='./privacyPolicy.html'">Privacy Policy</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="./scripts/mobile-nav.js"></script>
+    <script src="./script.js"></script>
+    <script src="./scripts/chatbot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,kn" }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+        });
+    </script>
+
+</body>
+
+</html>

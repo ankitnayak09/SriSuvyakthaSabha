@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="launching.css">
+    <title>Sri Suvyaktha Sabha</title>
+</head>
+
+<body>
+    <div class=content>
+        <!-- <img src="https://images.unsplash.com/photo-1558970439-add78fc68990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1179&q=80"></img> -->
+        <img src="./assets/img/launching/Frame.png" alt="">
+        <a href="./index1.html">Launch Now</a>
+        <!-- <div class="diya">
+            <img src="./assets/img/launching/diya.png" alt="">
+            <img src="./assets/img/launching/diya.png" alt="">
+        </div> -->
+    </div>
+    <div class="curtainBody">
+        <div id="leftCurtain" class="curtainContainer">
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+        </div>
+        <div id="rightCurtain" class="curtainContainer">
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+            <div class="unCurtain"></div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <script>
+        // setTimeout(slide,2000);
+        // function slide() {
+        //     document.getElementsByClassName("curtainContainer")[0].style.transform =
+        //         "translatex(-150vw) ";
+        //     document.getElementsByClassName("curtainContainer")[1].style.transform =
+        //         "translatex(150vw)";
+        // }
+
+        const leftCurtain = document.getElementsByClassName("curtainContainer")[0];
+        const rightCurtain =  document.getElementsByClassName("curtainContainer")[1];
+        const launchBtn = document.querySelector('.content a');
+        const overlay = document.querySelector('.overlay');
+
+        document.querySelector('.curtainBody').addEventListener('mouseover', () => {
+            setTimeout(() => {
+                // document.querySelector('.curtainBody').style.zIndex = -1;
+                document.querySelector('.curtainBody').style.display = 'none';
+            }, 2000);
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/a9a37f8c02.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/signin.css">
+    <title>Sign In | Suvyaktha Sabha</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div class="modal">
+                <div class="sign-in">
+                    <a href="./index.html"><img src="assets/img/logo-light.png" class="logo" /></a>
+                    <h1>Login</h1>
+
+                    <label for="mobNo">Mobile Number</label>
+                    <input type="tel" id="mobNo" class="input" placeholder="Enter 10 digit Number only" />
+
+
+                    <label for="otp">OTP</label>
+                    <input type="password" id="otp" class="input" placeholder="Password"/>
+                    <a href="#" class="btnResend">Resend OTP</a>
+
+
+                    <a href="" class="btn">Sign In</a>
+
+                    <center>or continue with</center>
+                    <div class="social-icons">
+                        <img src="./assets/img/signIn/google.png">
+                        <img src="./assets/img/signIn/facebook.png">
+                    </div>
+                    <center>Don't have an account yet? <strong class="btn-signUp">Sign&nbsp;Up</strong></center>
+                </div>
+
+
+                <div class="sign-up">
+                    <a href="./index.html"><img src="assets/img/logo-light.png" class="logo" /></a>
+                    <h1>Register</h1>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="input" placeholder="Enter Your Name" />
+
+
+                    <label>Veda</label>
+                    <details class="custom-select">
+                        <summary class="radios">
+                            <input type="radio" name="veda" id="default" title="Enter/select your Veda" checked>
+                            <input type="radio" name="veda" id="item1" title="Rigveda">
+                            <input type="radio" name="veda" id="item2" title="Yajurveda">
+                            <input type="radio" name="veda" id="item3" title="Samaveda">
+                            <input type="radio" name="veda" id="item4" title="Atharvaveda">
+                            <input type="radio" name="veda" id="item5" title="Shukla Yajurveda">
+
+                            <img src="./assets/img/signIn/selectOption.png" alt="">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="item1">Rigveda</label>
+                            </li>
+                            <li>
+                                <label for="item2">Yajurveda</label>
+                            </li>
+                            <li>
+                                <label for="item3">Samaveda</label>
+                            </li>
+                            <li>
+                                <label for="item4">Atharvaveda</label>
+                            </li>
+                            <li>
+                                <label for="item5">Shukla Yajurveda</label>
+                            </li>
+                        </ul>
+
+
+                    </details>
+
+                    <label for="mobileNo">Mobile Number</label>
+                    <input type="tel" id="mobileNo" class="input" placeholder="Enter 10 digit Number only">
+
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="email" class="input" placeholder="Enter your E-mail Address">
+
+                    <label for="password">Password</label>
+                    <div class="password--container">
+                        <input type="password" id="password" class="input" placeholder="Password">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    <a href="#" class="btn">Sign Up</a>
+
+                    <center>Already have an account? <strong class="btn-signIn">Sign&nbsp;In</strong></center>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./scripts/signin.js"></script>
+</body>
+
+</html>

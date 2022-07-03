@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link href="//db.onlinewebfonts.com/c/923c56dc2916dfb8892c056f2f5cde5a?family=Vodafone+Rg" rel="stylesheet"
+        type="text/css" />
+    <!-- <script src="https://kit.fontawesome.com/a9a37f8c02.js" crossorigin="anonymous"></script> -->
+    <title>Suvyaktha Sabha</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="chatbot">
+        <!-- <img src="./assets/img/chatbot.png" alt=""> -->
+        <nav>
+            <label class="nav-logo-off">
+                <!-- <svg viewBox="0 0 100 100"> -->
+                <img src="./assets/img/chatbot.png" alt="">
+                </svg>
+            </label>
+            <ul>
+                <li class="nav-item" onclick="window.open('https://goo.gl/maps/UdjJQRArQ8EwFgVG6', '_blank');"><img
+                        src="./assets/img/chatbot/location-pin.png"></li>
+                <li class="nav-item" onclick="window.open('https://web.whatsapp.com/', '_blank');"><img
+                        src="./assets/img/chatbot/whatsapp.png"></li>
+                <li class="nav-item" onclick="window.open('tel:+1800229933')"><img
+                        src="./assets/img/chatbot/phone-call.png"></li>
+                <li class="nav-item"><img src="./assets/img/chatbot/chat.png"></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main class="hero">
+
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html"><img src="assets/img/logo-light.png" class="logo" /></a>
+                    <div id="google_translate_element"></div>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li onclick="window.location.href='./index.html'">Home</li>
+                        <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                        <li class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="./servicesAparakarma.html">Aparakarma</a>
+                                <a href="./servicesShradha.html">Shradha</a>
+                            </div>
+                        </li>
+                        <li onclick="window.location.href = './gallery.html'">Gallery</li>
+                        <li onclick="window.location.href='./Events.html'">Events</li>
+                        <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                    </ul>
+                    <button onclick="window.location.href='./signin.html'">Sign in</button>
+                </div>
+            </nav>
+
+            <nav class="nav-mobile">
+                <div class="navbar">
+                    <img src="./assets/img/Suvyaktha Logo-01-01-01.jpg" class="navbar__logo"
+                        onclick="window.location.href='./index.html'">
+                    <div class="nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <div class="menu-items">
+                            <li onclick="window.location.href='./index.html'">Home</a></li>
+                            <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                            <li class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="./servicesAparakarma.html">Aparakarma</a>
+                                    <a href="./servicesShradha.html">Shradha</a>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href = './gallery.html'">Gallery</a></li>
+                            <li onclick="window.location.href='./Events.html'">Events</li>
+                            <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                            <button onclick="window.location.href='./signin.html'" class="btn">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1>Shradha/Masika</h1>
+        <p>To book this service,<br> please fill out the form below.</p>
+        <form action="">
+            <div class="modal">
+                <div class="form expired-form">
+                    <h3>Expired Person Details</h3>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="input" placeholder="Enter Name" required />
+
+                    <label>Cast</label>
+                    <details class="custom-select cast">
+                        <summary class="radios">
+                            <input type="radio" name="cast" id="default" title="Select Cast">
+                            <input type="radio" name="cast" id="item1" title="Trimatastha" checked>
+
+                            <img src="./assets/img/signIn/selectOption.png" alt="">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="item1">Trimatastha</label>
+                            </li>
+                        </ul>
+
+
+                    </details>
+
+
+
+
+                    <label>Veda</label>
+                    <details class="custom-select veda">
+                        <summary class="radios">
+                            <input type="radio" name="veda" id="default" title="Select veda" checked>
+                            <input type="radio" name="veda" id="veda1" title="Rigveda">
+                            <input type="radio" name="veda" id="veda2" title="Yajurveda">
+                            <input type="radio" name="veda" id="veda3" title="Samaveda">
+                            <input type="radio" name="veda" id="veda4" title="Atharvaveda">
+                            <input type="radio" name="veda" id="veda5" title="Shukla Yajurveda">
+
+                            <img src="./assets/img/signIn/selectOption.png" alt="">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="veda1">Rigveda</label>
+                            </li>
+                            <li>
+                                <label for="veda2">Yajurveda</label>
+                            </li>
+                            <li>
+                                <label for="veda3">Samaveda</label>
+                            </li>
+                            <li>
+                                <label for="veda4">Atharvaveda</label>
+                            </li>
+                            <li>
+                                <label for="veda5">Shukla Yajurveda</label>
+                            </li>
+                        </ul>
+
+
+                    </details>
+
+
+                    <label for="file">Adhar Card
+                        <div class="file-upload-wrapper" data-text="Upload document">
+                            <input type="file" name="file-adhar" id="file" class="input" value="" required>
+                        </div>
+                    </label>
+
+                    <label>
+                        Upload Photo
+                        <div class="file-upload-wrapper" data-text="Upload photo">
+                            <input type="file" name="file-photo" class="input" value="" required>
+                        </div>
+                    </label>
+
+                    <label>
+                        Death Certificate
+                        <div class="file-upload-wrapper" data-text="Upload document">
+                            <input type="file" name="file-death-certificate" class="input" value="" required>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <div class="modal">
+                <div class="form expired-form">
+                    <h3>Ritual Details</h3>
+
+                    <label>Start Day</label>
+                    <details class="custom-select day">
+                        <summary class="radios">
+                            <input type="radio" name="Day" id="default"
+                                title="Choose the day on which you want the ritual to begin." checked>
+                            <input type="radio" name="Day" id="day1" title="Monday">
+                            <input type="radio" name="Day" id="day2" title="Tuesday">
+                            <input type="radio" name="Day" id="day3" title="Wednesday">
+                            <input type="radio" name="Day" id="day4" title="Thursday">
+                            <input type="radio" name="Day" id="day5" title="Friday">
+                            <input type="radio" name="Day" id="day6" title="Saturday">
+                            <input type="radio" name="Day" id="day7" title="Sunday">
+
+                            <img src="./assets/img/signIn/selectOption.png" alt="">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="day1">Monday</label>
+                            </li>
+                            <li>
+                                <label for="day2">Tuesday</label>
+                            </li>
+                            <li>
+                                <label for="day3">Wednesday</label>
+                            </li>
+                            <li>
+                                <label for="day4">Thursday</label>
+                            </li>
+                            <li>
+                                <label for="day5">Friday</label>
+                            </li>
+                            <li>
+                                <label for="day6">Saturday</label>
+                            </li>
+                            <li>
+                                <label for="day7">Sunday</label>
+                            </li>
+                        </ul>
+
+
+                    </details>
+
+                    <label for="start-date">Start Date</label>
+                    <div class="calendar">
+                        <label name="startDate">
+                            <input class="input-date" name="startDate" type="text" data-type="date"
+                                placeholder="Choose start date" required>
+                            <img src="./assets/img/form/date.png" alt="">
+                        </label>
+                    </div>
+
+                    <label>
+                        Pooja Type
+                    </label>
+
+                    <div class="pooja-options">
+                        <label class="active" for="physicalOption">
+                            <input type="radio" name="pooja-type" value="Physical" checked>
+                            Physical
+                        </label>
+                        <label for="virtualOption">
+                            <input type="radio" name="pooja-type" value="Virtual">
+                            Virtual
+                        </label>
+                    </div>
+
+                    <div class="pooja-options">
+                        <label class="active" for="physicalOption">
+                            <input type="radio" name="pooja-type-second" value="Muthaidhe" checked>
+                            Muthaidhe
+                        </label>
+                        <label for="virtualOption">
+                            <input type="radio" name="pooja-type-second" id="other" value="Others">
+                            Others
+                        </label>
+                    </div>
+
+                    <div class="physical-options">
+
+                        <p class="service-cost">
+                            Service Cost : ₹<span id="service-cost-price">9,000</span>/-
+                        </p>
+
+                        <label for="guestCount">Guest Count</label>
+                        <input type="text" id="guestCount" class="input"
+                            placeholder="Enter no.of guests who are attending" required />
+                        <p>Maximum no.of people can be 7 people, if exceeds ₹300/meal</p>
+
+                        <h4 class="food-menu">Food Menu</h4>
+                        <p><strong>We Provide : </strong>White Rice, Rasam, Sambar, 2 Variety kosambri, Khara
+                            boondi<br><br>
+                            <strong>You can Choose : </strong>2&nbsp;variety&nbsp;Chutney, 2&nbsp;Variety&nbsp;Palya,
+                            1&nbsp;Sweet, 1&nbsp;Gojju, 1&nbsp;Flavoured Rice, 1&nbsp;payasam,
+                            1&nbsp;Bonda/Bajji
+                        </p>
+
+                        <div class="food-menu-options">
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Palya</p>
+                                    <label>
+                                        <input type="checkbox" name="Palya" value="Genasu">
+                                        Genasu
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Palya" value="Suvarna Gedde">
+                                        Suvarna Gedde
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Palya" value="Yele Kosu">
+                                        Yele Kosu
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Palya" value="Gorikayi">
+                                        Gorikayi
+                                    </label>
+                                </div>
+                                <p id="palya-invalid">You can select only 2 Palya</p>
+                            </div>
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Chutney</p>
+                                    <label>
+                                        <input type="checkbox" name="Chutney" value="Shunti">
+                                        Shunti
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Chutney" value="Kayi">
+                                        Kayi
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Chutney" value="Kadalebele">
+                                        Kadalebele
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Chutney" value="Uddinabele">
+                                        Uddinabele
+                                    </label>
+                                </div>
+                                <p id="chutney-invalid">You can select only 2 Chutney</p>
+
+                            </div>
+
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Gojju</p>
+                                    <label>
+                                        <input type="checkbox" name="Gojju" value="Bendekayi" id="Gojju1"
+                                            onchange="selectOnlyThisGojju(this.id)">
+                                        Bendekayi
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Gojju" value="Herekayi" id="Gojju2"
+                                            onchange="selectOnlyThisGojju(this.id)">
+                                        Herekayi
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Gojju" value="Hoagalakayi" id="Gojju3"
+                                            onchange="selectOnlyThisGojju(this.id)">
+                                        Hoagalakayi
+                                    </label>
+                                </div>
+                                <p id="gojju-invalid">You can select only 1 Gojju</p>
+                            </div>
+
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Payasam</p>
+                                    <label>
+                                        <input type="checkbox" name="Payasam" value="Hesarubele" id="Payasam1"
+                                            onclick="selectOnlyThisPayasam(this.id)">
+                                        Hesarubele
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Payasam" value="Shavige" id="Payasam2"
+                                            onclick="selectOnlyThisPayasam(this.id)">
+                                        Shavige
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Payasam" value="Gasagase" id="Payasam3"
+                                            onclick="selectOnlyThisPayasam(this.id)">
+                                        Gasagase
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Payasam" value="Kadalebele" id="Payasam4"
+                                            onclick="selectOnlyThisPayasam(this.id)">
+                                        Kadalebele
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Payasam" value="Sabudana" id="Payasam5"
+                                            onclick="selectOnlyThisPayasam(this.id)">
+                                        Sabudana
+                                    </label>
+                                </div>
+                                <p id="payasam-invalid">You can select only 1 Payasam</p>
+
+
+                            </div>
+
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Flavoured Rice</p>
+                                    <label>
+                                        <input type="checkbox" name="Flavoured Rice" value="Puliogare" id="Rice1"
+                                            onclick="selectOnlyThisRice(this.id)">
+                                        Puliogare
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Flavoured Rice" value="Lemon Rice" id="Rice2"
+                                            onclick="selectOnlyThisRice(this.id)">
+                                        Lemon Rice
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Flavoured Rice" value="Mango Rice" id="Rice3"
+                                            onclick="selectOnlyThisRice(this.id)">
+                                        Mango Rice
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Flavoured Rice" value="Mustard Rice" id="Rice4"
+                                            onclick="selectOnlyThisRice(this.id)">
+                                        Mustard Rice
+                                    </label>
+                                </div>
+                                <p id="rice-invalid">You can select only 1 Rice</p>
+
+
+                            </div>
+
+                            <div>
+                                <div class="food-menu-options__items">
+                                    <p class="food-menu__title">Bonda/Bajji</p>
+                                    <label>
+                                        <input type="checkbox" name="Bonda/Bajji" value="Chilli" id="Bonda1"
+                                            onclick="selectOnlyThisBonda(this.id)">
+                                        Chilli
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Bonda/Bajji" value="Balekayi" id="Bonda2"
+                                            onclick="selectOnlyThisBonda(this.id)">
+                                        Balekayi
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Bonda/Bajji" value="Herekayi" id="Bonda3"
+                                            onclick="selectOnlyThisBonda(this.id)">
+                                        Herekayi
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Bonda/Bajji" value="Vegetable" id="Bonda4"
+                                            onclick="selectOnlyThisBonda(this.id)">
+                                        Vegetable
+                                    </label>
+                                </div>
+                                <p id="bonda-invalid">You can select only 1 Bonda/Bajji</p>
+
+                            </div>
+
+
+                            <div>
+                                <div class="food-menu-options__items col-2">
+                                    <p class="food-menu__title">Sweets</p>
+                                    <div class="flex">
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Ladoo" id="Sweet1"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Ladoo
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Besan Ladoo" id="Sweet2"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Besan Ladoo
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Jamoon" id="Sweet3"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Jamoon
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Dry Jamoon" id="Sweet4"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Dry Jamoon
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Jilebi" id="Sweet5"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Jilebi
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Jahangir" id="Sweet6"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Jahangir
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Badusha" id="Sweet7"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Badusha
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Mysore Pak" id="Sweet8"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Mysore Pak
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Holige" id="Sweet9"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Holige
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="Sweets" value="Badam Puri" id="Sweet10"
+                                                    onclick="selectOnlyThisSweet(this.id)">
+                                                Badam Puri
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="sweet-invalid">Default Holige will be provided</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="virtual-options">
+                        <p class="service-cost">
+                            Service Cost : ₹18,000/-
+                        </p>
+                        <p>“ Meeting details will be sent via email “</p>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn btn-submit">Book Now</a>
+        </form>
+
+        <div class="service-details">
+            <h3>What we provide</h3>
+            <ul>
+                <li>9th - Nithyavidhi</li>
+                <li>10th - Dharmodaka</li>
+                <li>11th - ekodishta,vrishabha Swarga, Shodasha dhanagalu</li>
+                <li>12th - Sapindikarana</li>
+                <li>13th - Masika</li>
+                <li>14th - Vaikunta</li>
+            </ul>
+            <ul>
+                <li>From the beginning to the end of the programme, 3 brahmins will be paid, as well as Panche, Copper
+                    Chombu, Panchpathre, and Udharane</li>
+                <li>On the day of Vaikunta, Purohit will be paid for Upanishad Parayana and Rudrabhisheka</li>
+                <li>Purohit/Bhramin will be compensated for receiving Dhaana on the 5th, 7th, or 9th day of the ritual.
+                </li>
+                <li>No Extra cost to be paid for Bhramin's</li>
+            </ul>
+        </div>
+
+        <img src="./assets/img/spot2.png" alt="spot" class="second-spot">
+        <img src="./assets/img/spots.png" alt="spot" class="first-spot">
+        <img src="./assets/img/spot2.png" alt="spot" class="fourth-spot">
+        <img src="./assets/img/spots.png" alt="spot" class="third-spot">
+
+    </main>
+
+    <footer>
+        <img class="footer-design" src="./assets/img/home/FooterDesign1.png" alt="Footer Design">
+        <div class="footer-box">
+
+            <div class="footer-div-1">
+                <h1><img src="./assets/img/Suvyaktha Logo-01-01-01.jpg" class="logo"></h1>
+                <div class="email">
+                    <i class="far fa-envelope"></i>
+                    <p>info@srisuvyakthasabha.com</p>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9481290352
+                    </p>
+                </div>
+            </div>
+            <div class="footer-div-2">
+                <h3 onclick="window.location.href='./index.html'">Home</h3>
+                <ul>
+                    <li onclick="window.location.href='./gallery.html'">Gallery</li>
+                    <li onclick="window.location.href='./Events.html'">Events</li>
+                    <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-div-2">
+                <h3>Our Services</h3>
+                <ul>
+                    <li onclick="window.location.href='./servicesAparakarma.html'">Aparakarma</li>
+                    <li onclick="window.location.href='./servicesShradha.html'">Shradha</li>
+                </ul>
+                <!-- <button onclick="window.location.href='./ServicesAparakarma.html'">Book Now</button> -->
+                <div class="social-icons">
+                    <a><img src="./assets/img/social-icons/google.png"></a>
+                    <a><img src="./assets/img/social-icons/twitter.png"></a>
+                    <a><img src="./assets/img/social-icons/instagram.png"></a>
+                    <a><img src="./assets/img/social-icons/linkedin.png"></a>
+                </div>
+            </div>
+            <div class="footer-div-2">
+                <h3>Our Address</h3>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>#20, 1, HMT Main Rd, 2nd Phase, Gokula 1st Stage, Divanarapalya, Yeswanthpur, Bengaluru,
+                        Karnataka 560054</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower-box">
+            <div class="copyrights">© 2022 Sri Suvyakthasabha. All rights reserved | Powered by Agumentik Software
+                Private Limited.</div>
+            <ul>
+                <li>Home</li>
+                <li onclick="window.location.href='./Terms.html'">Terms</li>
+                <li onclick="window.location.href='./privacyPolicy.html'">Privacy Policy</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/chatbot.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Selecting 2 Chutney
+        var limit = 2;
+        $('#chutney-invalid').hide();
+        $('input[name="Chutney"]').on('click', function (evt) {
+            if ($('input[name="Chutney"]:checked').length > limit) {
+                this.checked = false;
+                $('#chutney-invalid').show();
+                setTimeout(function () {
+                    $('#chutney-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#chutney-invalid').hide();
+            }
+
+        });
+
+        // Palya
+        $('#palya-invalid').hide();
+        $('input[name="Palya"]').on('click', function (evt) {
+            if ($('input[name="Palya"]:checked').length > limit) {
+                this.checked = false;
+                $('#palya-invalid').show();
+                setTimeout(function () {
+                    $('#palya-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#palya-invalid').hide();
+            }
+        });
+
+        $('#gojju-invalid').hide();
+        $('input[name="Gojju"]').on('click', function (evt) {
+            if ($('input[name="Gojju"]:checked').length > 1) {
+                this.checked = false;
+                $('#gojju-invalid').show();
+                setTimeout(function () {
+                    $('#gojju-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#gojju-invalid').hide();
+            }
+        });
+
+        $('#payasam-invalid').hide();
+        $('input[name="Payasam"]').on('click', function (evt) {
+            if ($('input[name="Payasam"]:checked').length > 1) {
+                this.checked = false;
+                $('#payasam-invalid').show();
+                setTimeout(function () {
+                    $('#payasam-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#payasam-invalid').hide();
+            }
+        });
+
+        $('#rice-invalid').hide();
+        $('input[name="Flavoured Rice"]').on('click', function (evt) {
+            if ($('input[name="Flavoured Rice"]:checked').length > 1) {
+                this.checked = false;
+                $('#rice-invalid').show();
+                setTimeout(function () {
+                    $('#rice-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#rice-invalid').hide();
+            }
+        });
+
+        $('#bonda-invalid').hide();
+        $('input[name="Bonda/Bajji"]').on('click', function (evt) {
+            if ($('input[name="Bonda/Bajji"]:checked').length > 1) {
+                this.checked = false;
+                $('#bonda-invalid').show();
+                setTimeout(function () {
+                    $('#bonda-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#bonda-invalid').hide();
+            }
+        });
+
+        $('#sweet-invalid').hide();
+        $('input[name="Sweets"]').on('click', function (evt) {
+            if ($('input[name="Sweets"]:checked').length > 1) {
+                this.checked = false;
+                $('#sweet-invalid').show();
+                setTimeout(function () {
+                    $('#sweet-invalid').hide();
+                }, 5000);
+            }
+            else {
+                $('#sweet-invalid').hide();
+            }
+        });
+
+        // 
+        $('input[type=radio][name=pooja-type-second]').change(function () {
+            if (this.value == 'Muthaidhe') {
+                $('#service-cost-price').text('9000');
+            }
+            else if (this.value == 'Others') {
+                $('#service-cost-price').text('8000');
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,kn" }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+</body>
+
+</html>

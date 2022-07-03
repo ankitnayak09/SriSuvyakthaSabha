@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #C9ADA7 0%, #F2E9E4 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    background-position: 100% 50%;
+
+    background-image: url(../assets/img/signIn/Sign\ in-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn 66%;
+}
+
+.modal {
+    /* min-height: 80%; */
+    /* width: 100%; */
+    width: 600px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+
+    border-radius: 40px;
+
+    zoom: 80%;
+
+    padding: 1% 4%;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+
+    color: #2B2A41
+}
+
+h1 {
+    font-size: 2.375rem;
+    color: #22223B;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10%;
+    transition: 0.6s;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #22223B;
+    margin-top: 20px;
+}
+
+.select select {
+    width: 100%;
+
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+.select {
+    position: relative;
+}
+
+.select img {
+    position: absolute;
+    top: calc(50% + 10px);
+    right: 15px;
+    width: 14px;
+}
+
+.select select:required:invalid {
+    color: #9A8C98;
+}
+
+.select select option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    cursor: pointer;
+    background: #F2E9E4;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.select select:focus {
+    outline: none;
+}
+
+
+.btnResend {
+    text-decoration: underline;
+    color: #22223B;
+    margin: 10px 0 20px;
+    font-size: 0.875rem;
+}
+
+.input {
+    background: #F2E9E4;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+
+}
+
+input::placeholder {
+    color: #9A8C98;
+    opacity: 0.68;
+    font-family: 'Poppins';
+}
+
+
+/* Password  */
+#password {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#password + i {
+   margin-left: -40px;
+   cursor: pointer;
+}
+
+.btn {
+    padding: 8px;
+    background: #9A8C98;
+    border-radius: 10px;
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #F2E9E4;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+center {
+    margin: 20px 0 20px;
+    font-size: 0.9375rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons img {
+    background: #F2E9E4;
+    border-radius: 40px;
+    height: 40px;
+    width: 125px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.05);
+}
+
+.btn-signUp {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signUp:hover {
+    text-decoration: underline;
+    color: #9A8C98;
+}
+
+.btn-signIn {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signIn:hover {
+    text-decoration: underline;
+    color: #9A8C98;
+}
+
+.sign-up {
+    display: none;
+    flex-direction: column;
+    padding: 10% 10%;
+    transition: 0.6s;
+}
+
+option {
+    outline: none;
+    border: none;
+    color: #9A8C98;
+}
+
+.sign-up .btn {
+    margin-top: 20px;
+}
+
+
+
+/* ! Custom DropDown */
+
+
+details {
+	position: relative;
+}
+
+details[open] {
+	z-index: 1;
+}
+
+summary {
+    padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #F2E9E4;
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:focus {
+	outline: none;
+}
+
+#default {
+    color:#9A8C98;
+}
+
+/* details[open] summary:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+} */
+
+summary img {
+    position: absolute;
+    transform: translateY(50%) rotate(180deg);
+    right: 15px;
+    width: 14px;
+}
+
+details[open] summary img {
+    transform: rotate(0) translateY(50%);
+}
+
+ul.list {
+	width: 100%;
+	background: #F2E9E4;
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+.list li {
+	margin: 0;
+    list-style: none;
+}
+
+.list label {
+    color:#9A8C98;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 10px 0;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.list label:hover {
+    color: #F2E9E4;
+    background-color: #9A8C98;
+}
+
+.list li:first-child {
+	padding-top: 0; 
+}
+
+.list li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+summary.radios {
+	counter-reset: radios;
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+    font-family: 'Poppins';
+}
+
+input[type=radio]:checked {
+	display: inline;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: 1rem;
+}
+
+ul.list {
+	counter-reset: labels;
+}
+
+label {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal {
+        min-width: 90vw;
+        min-height: max-content;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal {
+        /* min-width: 90vw; */
+        min-height: max-content;
+    }
+}

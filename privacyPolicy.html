@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="//db.onlinewebfonts.com/c/923c56dc2916dfb8892c056f2f5cde5a?family=Vodafone+Rg" rel="stylesheet"
+        type="text/css" />
+    <script src="https://kit.fontawesome.com/a9a37f8c02.js" crossorigin="anonymous"></script>
+    <title>Suvyaktha Sabha</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/chatbot.css">
+</head>
+
+<body>
+
+    <div class="chatbot">
+        <img src="./assets/img/chatbot.png" alt="">
+        <nav>
+            <label class="nav-logo-off">
+                <!-- <svg viewBox="0 0 100 100"> -->
+                <img src="./assets/img/chatbot.png" alt="">
+                </svg>
+            </label>
+            <ul>
+                <li class="nav-item" onclick="window.open('https://goo.gl/maps/UdjJQRArQ8EwFgVG6', '_blank');"><img
+                        src="./assets/img/chatbot/location-pin.png"></li>
+                <li class="nav-item" onclick="window.open('https://web.whatsapp.com/', '_blank');"><img
+                        src="./assets/img/chatbot/whatsapp.png"></li>
+                <li class="nav-item" onclick="window.open('tel:+1800229933')"><img
+                        src="./assets/img/chatbot/phone-call.png"></li>
+                <li class="nav-item"><img src="./assets/img/chatbot/chat.png"></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main class="hero">
+
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="./index.html"><img src="assets/img/Suvyaktha Logo-01-01-01.jpg" class="logo" /></a>
+                    <div id="google_translate_element"></div>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li onclick="window.location.href='./index.html'">Home</li>
+                        <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                        <li class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="./servicesAparakarma.html">Aparakarma</a>
+                                <a href="./servicesShradha.html">Shradha</a>
+                            </div>
+                        </li>
+                        <li onclick="window.location.href = './gallery.html'">Gallery</li>
+                        <li onclick="window.location.href='./Events.html'">Events</li>
+                        <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                    </ul>
+                    <button onclick="window.location.href='./signin.html'">Sign in</button>
+                </div>
+            </nav>
+
+            <nav class="nav-mobile">
+                <!-- <div class="nav-left">
+                    <div class="logo">LOGO</div>
+                    <div>English ▼</div>
+                </div> -->
+                <div class="navbar">
+                    <img src="./assets/img/Suvyaktha Logo-01-01-01.jpg" class="navbar__logo"
+                        onclick="window.location.href='./index.html'">
+                    <div class="nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <div class="menu-items">
+                            <li onclick="window.location.href='./index.html'">Home</a></li>
+                            <!-- <li onclick="window.location.href ='./servicesAparakarma.html'">Services</li> -->
+                            <li class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="./servicesAparakarma.html">Aparakarma</a>
+                                    <a href="./servicesShradha.html">Shradha</a>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href = './gallery.html'">Gallery</a></li>
+                            <li onclick="window.location.href='./Events.html'">Events</li>
+                            <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                            <button onclick="window.location.href='./signin.html'" class="btn">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1>Privacy Policy</h1>
+        <form action="">
+            <div class="modal">
+                <div class="form expired-form">
+                    <h3>Expired Person Details</h3>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="input" placeholder="Enter Name" required />
+
+                    <label for="cast">Cast</label>
+                    <select name="cast" id="cast" class="input" required>
+                        <option value="" selected disable hidden>Select Cast</option>
+                        <option value="cast1">cast1</option>
+                    </select>
+
+                    <!-- <label for="veda">Veda</label>
+                    <select name="Veda" id="veda" class="input" required>
+                        <option value="" selected disable hidden>Select veda</option>
+                        <option value="Rigveda">Rigveda</option>
+                        <option value="Yajurveda">Yajurveda</option>
+                        <option value="Samaveda">Samaveda</option>
+                        <option value="Atharvaveda">Atharvaveda</option>
+                        <option value="Shukla Yajurveda">Shukla Yajurveda</option>
+                    </select> -->
+
+
+                    <label>Veda</label>
+                    <details class="custom-select veda">
+                        <summary class="radios">
+                            <input type="radio" name="veda" id="default" title="Select veda" checked>
+                            <input type="radio" name="veda" id="item1" title="Rigveda">
+                            <input type="radio" name="veda" id="item2" title="Yajurveda">
+                            <input type="radio" name="veda" id="item3" title="Samaveda">
+                            <input type="radio" name="veda" id="item4" title="Atharvaveda">
+                            <input type="radio" name="veda" id="item5" title="Shukla Yajurveda">
+
+                            <img src="./assets/img/signIn/selectOption.png" alt="">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="item1">Rigveda</label>
+                            </li>
+                            <li>
+                                <label for="item2">Yajurveda</label>
+                            </li>
+                            <li>
+                                <label for="item3">Samaveda</label>
+                            </li>
+                            <li>
+                                <label for="item4">Atharvaveda</label>
+                            </li>
+                            <li>
+                                <label for="item5">Shukla Yajurveda</label>
+                            </li>
+                        </ul>
+
+
+                    </details>
+
+
+                    <label for="file">Adhar Card</label>
+                    <div class="file-upload-wrapper" data-text="Upload document">
+                        <input type="file" name="file-adhar" id="file" class="input" value="">
+                    </div>
+
+                    <label>
+                        Upload Photo
+                        <div class="file-upload-wrapper" data-text="Upload photo">
+                            <input type="file" name="file-photo" class="input" value="">
+                        </div>
+                    </label>
+
+                    <label>
+                        Death Certificate
+                        <div class="file-upload-wrapper" data-text="Upload document">
+                            <input type="file" name="file-death-certificate" class="input" value="">
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-submit">Book Now</a>
+        </form>
+
+        <div class="service-details">
+            <h3>What we provide</h3>
+            <ul>
+                <li>9th - Nithyavidhi</li>
+                <li>10th - Dharmodaka</li>
+                <li>11th - ekodishta,vrishabha Swarga, Shodasha dhanagalu</li>
+                <li>12th - Sapindikarana</li>
+                <li>13th - Masika</li>
+                <li>14th - Vaikunta</li>
+            </ul>
+            <ul>
+                <li>From the beginning to the end of the programme, 3 brahmins will be paid, as well as Panche, Copper
+                    Chombu, Panchpathre, and Udharane</li>
+                <li>On the day of Vaikunta, Purohit will be paid for Upanishad Parayana and Rudrabhisheka</li>
+                <li>Purohit/Bhramin will be compensated for receiving Dhaana on the 5th, 7th, or 9th day of the ritual.
+                </li>
+                <li>No Extra cost to be paid for Bhramin's</li>
+            </ul>
+        </div>
+
+        <img src="./assets/img/spot2.png" alt="spot" class="second-spot">
+        <img src="./assets/img/spots.png" alt="spot" class="first-spot">
+        <img src="./assets/img/spot2.png" alt="spot" class="fourth-spot">
+        <img src="./assets/img/spots.png" alt="spot" class="third-spot">
+
+    </main>
+
+    <footer>
+        <img class="footer-design" src="./assets/img/home/FooterDesign1.png" alt="Footer Design">
+        <div class="footer-box">
+
+            <div class="footer-div-1">
+                <h1><img src="./assets/img/Suvyaktha Logo-01-01-01.jpg" class="logo"></h1>
+                <div class="email">
+                    <i class="far fa-envelope"></i>
+                    <p>info@srisuvyakthasabha.com</p>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9481290352
+                    </p>
+                </div>
+            </div>
+            <div class="footer-div-2">
+                <h3 onclick="window.location.href='./index.html'">Home</h3>
+                <ul>
+                    <li onclick="window.location.href='./gallery.html'">Gallery</li>
+                    <li onclick="window.location.href='./Events.html'">Events</li>
+                    <li onclick="window.location.href='./contactUs.html'">Contact us</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-div-2">
+                <h3>Our Services</h3>
+                <ul>
+                    <li onclick="window.location.href='./servicesAparakarma.html'">Aparakarma</li>
+                    <li onclick="window.location.href='./servicesShradha.html'">Shradha</li>
+                </ul>
+                <!-- <button onclick="window.location.href='./ServicesAparakarma.html'">Book Now</button> -->
+                <div class="social-icons">
+                    <a><img src="./assets/img/social-icons/google.png"></a>
+                    <a><img src="./assets/img/social-icons/twitter.png"></a>
+                    <a><img src="./assets/img/social-icons/instagram.png"></a>
+                    <a><img src="./assets/img/social-icons/linkedin.png"></a>
+                </div>
+            </div>
+            <div class="footer-div-2">
+                <h3>Our Address</h3>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>#20, 1, HMT Main Rd, 2nd Phase, Gokula 1st Stage, Divanarapalya, Yeswanthpur, Bengaluru,
+                        Karnataka 560054</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower-box">
+            <div class="copyrights">© 2022 Sri Suvyakthasabha. All rights reserved | Powered by Agumentik Software
+                Private Limited.</div>
+            <ul>
+                <li>Home</li>
+                <li onclick="window.location.href='./Terms.html'">Terms</li>
+                <li onclick="window.location.href='./privacyPolicy.html'">Privacy Policy</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/chatbot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "en,kn" }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+</body>
+
+</html>
